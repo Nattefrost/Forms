@@ -17,23 +17,4 @@ namespace Forms.Tests
             Assert.That(1 == 1);
         }
     }
-
-    [TestFixture]
-    public class FormsTests
-    {
-        [Test]
-        public void Can_create_form()
-        {
-            Assert.That(1 != 0);
-        }
-    }
-    [TestFixture]
-    public class AnswersTests
-    {
-        [Test]
-        public void Can_create_answer()
-        {
-            Assert.That(0 == 0);
-        }
-    }
 }
