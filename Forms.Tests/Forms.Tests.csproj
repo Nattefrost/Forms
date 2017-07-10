@@ -55,9 +55,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Form\Form.csproj">
+    <ProjectReference Include="..\Form\Forms.Models.csproj">
       <Project>{7001d88a-17df-49a2-b5c3-3bb096b2c0af}</Project>
-      <Name>Form</Name>
+      <Name>Forms.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

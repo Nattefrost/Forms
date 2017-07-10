@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forms.Tests", "Forms.Tests\Forms.Tests.csproj", "{8D1A88E8-0BB2-4F24-BB40-EB176E9B86AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Form", "Form\Form.csproj", "{7001D88A-17DF-49A2-B5C3-3BB096B2C0AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forms.Models", "Form\Forms.Models.csproj", "{7001D88A-17DF-49A2-B5C3-3BB096B2C0AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
