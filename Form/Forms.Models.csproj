@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BooleanQuestion.cs" />
     <Compile Include="FormAnswer.cs" />
     <Compile Include="Form.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
