@@ -10,11 +10,16 @@ namespace Forms.Models
     {
         public Form()
         {
-            Questions = new Dictionary<int,QuestionBase>();
             Answers = new Dictionary<string, FormAnswer>();
+            Root = new QuestionRoot();
         }
-        public IReadOnlyDictionary<int,QuestionBase> Questions { get; private set; }
-        public string Title { get; set; }
+        private QuestionRoot Root { get; set; }
+        public string Title
+        {
+            get { return Root.Title; }
+            set { Root.Title = value; }
+        }
+        public IReadOnlyDictionary<int, QuestionBase> Questions => Root.Questions
         public Dictionary<string,FormAnswer> Answers {get;private set;}
         public FormAnswer FindOrCreateAnswer(string userName)
         {
