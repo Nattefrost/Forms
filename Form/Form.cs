@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Form
 {
-    public class Forms
+    public class Form
     {
     }
 
