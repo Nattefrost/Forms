@@ -7,8 +7,8 @@
     <ProjectGuid>{7001D88A-17DF-49A2-B5C3-3BB096B2C0AF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Form</RootNamespace>
-    <AssemblyName>Form</AssemblyName>
+    <RootNamespace>Forms.Models</RootNamespace>
+    <AssemblyName>Forms.Models</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
