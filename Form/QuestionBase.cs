@@ -14,7 +14,9 @@ namespace Forms.Models
             Children = new List<QuestionBase>();
         }
         internal Form Form { get; set; }
-        public int Index { get; set; }
+        public int Index {
+            get; set;
+        }
         public string Text { get; set; }
         public bool AllowEmptyAnswers { get; set; }
         public List<QuestionBase> Children { get; private set; }
