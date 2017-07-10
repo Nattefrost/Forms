@@ -8,6 +8,11 @@ namespace Form
 {
     public class Form
     {
+        public Form()
+        {
+            Questions = new List<QuestionBase>();
+        }
+        public IReadOnlyList<QuestionBase> Questions {get;private set;}
     }
 
 }

@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Form
 {
-    class Question
+    public class QuestionBase
     {
+        internal Form Form { get; set; }
+        public string Text { get; set; }
     }
 }
