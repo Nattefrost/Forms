@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Forms.Models
 {
-    internal class QuestionRoot
+    internal class QuestionRoot : QuestionBase
     {
         public QuestionRoot()
         {

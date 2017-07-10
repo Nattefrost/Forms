@@ -10,11 +10,24 @@ namespace Forms.Models
     {
         public QuestionBase()
         {
-            SubQuestions = new List<QuestionBase>();
+            Children = new List<QuestionBase>();
         }
         internal Form Form { get; set; }
+        public int Index { get; set; }
         public string Text { get; set; }
         public bool AllowEmptyAnswers { get; set; }
-        public List<QuestionBase> SubQuestions { get; private set; }
+        public List<QuestionBase> Children { get; private set; }
+        public QuestionBase AddNewQuestion(Type t, bool param)
+        {
+            Type a = Type.GetType(t, param);
+            Object o = (Activator.CreateInstance(a));
+            return o;
+        }
+        public QuestionBase AddNewQuestion(string t, bool param)
+        {
+            Type a = Type.GetType(t, param);
+            Object o = (Activator.CreateInstance(a));
+            return o;
+        }
     }
 }

@@ -19,7 +19,7 @@ namespace Forms.Models
             get { return Root.Title; }
             set { Root.Title = value; }
         }
-        public IReadOnlyDictionary<int, QuestionBase> Questions => Root.Questions
+        public IReadOnlyDictionary<int, QuestionBase> Questions => Root.Questions;
         public Dictionary<string,FormAnswer> Answers {get;private set;}
         public FormAnswer FindOrCreateAnswer(string userName)
         {
