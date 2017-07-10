@@ -8,6 +8,7 @@ namespace Forms.Models
 {
     public class QuestionBase
     {
+        QuestionBase _parent;
         public QuestionBase()
         {
             Children = new List<QuestionBase>();
@@ -17,17 +18,25 @@ namespace Forms.Models
         public string Text { get; set; }
         public bool AllowEmptyAnswers { get; set; }
         public List<QuestionBase> Children { get; private set; }
+        public QuestionBase Parent {
+            get { return _parent; }
+            set
+            {
+                if (value != null) _parent.Children.Remove(this);
+                _parent = null;
+            }
+        }
         public QuestionBase AddNewQuestion(Type t, bool param)
         {
-            Type a = Type.GetType(t, param);
+            Type a = Type.GetType(t.ToString(), param);
             Object o = (Activator.CreateInstance(a));
-            return o;
+            return o as QuestionBase;
         }
         public QuestionBase AddNewQuestion(string t, bool param)
         {
             Type a = Type.GetType(t, param);
             Object o = (Activator.CreateInstance(a));
-            return o;
+            return o as QuestionBase;
         }
     }
 }
