@@ -10,6 +10,9 @@ namespace Forms.Models
     {
         public string Title { get; set; }
         public new QuestionBase Parent => null;
-
+        public bool Contains(QuestionBase q)
+        {
+            return this.Children.Contains(q);
+        }
     }
 }
