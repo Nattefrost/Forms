@@ -13,6 +13,7 @@ namespace Form
             Questions = new List<QuestionBase>();
         }
         public IReadOnlyList<QuestionBase> Questions {get;private set;}
+        public string Title { get; set; }
     }
 
 }

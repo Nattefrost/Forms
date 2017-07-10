@@ -10,5 +10,6 @@ namespace Form
     {
         internal Form Form { get; set; }
         public string Text { get; set; }
+        public bool AllowEmptyAnswers { get; set; }
     }
 }
