@@ -11,7 +11,7 @@ namespace DForm
         public Form()
         {
             Answers = new Dictionary<string, FormAnswer>();
-            Questions = new QuestionRoot();
+            Questions = new QuestionRoot(this);
         }
         public string Title
         {

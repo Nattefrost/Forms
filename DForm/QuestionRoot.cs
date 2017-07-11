@@ -8,10 +8,11 @@ namespace DForm
 {
     public class QuestionRoot : QuestionBase
     {
-        public QuestionRoot( ):base(null)
+        public QuestionRoot(Form f):base(null)
         {
-          
+            Document = f;
         }
+        public Form Document { get; private set; }
         public new QuestionBase Parent => null;
         public bool Contains(QuestionBase q)
         {
