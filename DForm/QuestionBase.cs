@@ -17,7 +17,7 @@ namespace DForm
         protected QuestionBase( QuestionBase parent )
         {
             _parent = parent;
-            _children = new List<QuestionBase>();
+            _children = new ProxyList();
         }
 
         /// <summary>
@@ -94,14 +94,18 @@ namespace DForm
         public QuestionBase AddNewQuestion( Type t, bool param )
         {
             Type a = Type.GetType( t.ToString(), param );
-            Object o = (Activator.CreateInstance( a ));
-            return o as QuestionBase;
+            Object o = Activator.CreateInstance( a, new object[] { this } );
+            QuestionBase b = o as QuestionBase;
+            _children.Add( b );
+            return b;
         }
         public QuestionBase AddNewQuestion( string t, bool param )
         {
             Type a = Type.GetType( t, param );
-            Object o = (Activator.CreateInstance( a ));
-            return o as QuestionBase;
+            Object o = Activator.CreateInstance( a ,new object[] { this } );
+            QuestionBase b = o as QuestionBase;
+            _children.Add( b );
+            return b;
         }
     }
 }

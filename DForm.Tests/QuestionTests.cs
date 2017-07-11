@@ -19,6 +19,8 @@ namespace DForm.Tests
             Assert.AreEqual( "FORM1", f.Title );
             QuestionBase q1 = f.Questions.AddNewQuestion( "DForm.BooleanQuestion,DForm", true );
             QuestionBase q2 = f.Questions.AddNewQuestion( typeof( BooleanQuestion ), true );
+            q1.Title = "T1";
+            q2.Title = "T2";
             Assert.AreEqual( 0, q1.Index );
             Assert.AreEqual( 1, q2.Index );
             q2.Index = 0;

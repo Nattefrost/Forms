@@ -14,9 +14,7 @@ namespace DForm
         }
         public Form Document { get; private set; }
         public new QuestionBase Parent => null;
-        public bool Contains(QuestionBase q)
-        {
-            return this.Children.Contains(q);
-        }
+        public bool Contains(QuestionBase q) => Children.Contains(q);
+        
     }
 }
