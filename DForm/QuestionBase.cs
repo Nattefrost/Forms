@@ -11,7 +11,7 @@ namespace DForm
     /// </summary>
     public abstract class QuestionBase
     {
-        readonly List<QuestionBase> _children;
+        readonly ProxyList _children;
         QuestionBase _parent;
 
         protected QuestionBase( QuestionBase parent )
@@ -53,7 +53,7 @@ namespace DForm
             return q;
         }
 
-        public IReadOnlyList<QuestionBase> Children => _children;
+        public ProxyList Children => _children;
 
         public void RemoveChild( QuestionBase c )
         {
