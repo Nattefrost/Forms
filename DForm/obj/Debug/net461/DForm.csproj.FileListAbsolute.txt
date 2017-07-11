@@ -1,0 +1,5 @@
+C:\Users\Benoit\Desktop\Forms\DForm\obj\Debug\net461\DForm.AssemblyInfo.cs
+C:\Users\Benoit\Desktop\Forms\DForm\bin\Debug\net461\DForm.dll
+C:\Users\Benoit\Desktop\Forms\DForm\bin\Debug\net461\DForm.pdb
+C:\Users\Benoit\Desktop\Forms\DForm\obj\Debug\net461\DForm.dll
+C:\Users\Benoit\Desktop\Forms\DForm\obj\Debug\net461\DForm.pdb
